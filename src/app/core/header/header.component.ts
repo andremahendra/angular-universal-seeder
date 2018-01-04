@@ -1,0 +1,30 @@
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-header',
+  templateUrl: './header.component.html',
+  styleUrls: ['./header.component.scss']
+})
+export class HeaderComponent implements OnInit {
+
+  menus: any = [
+    {
+      title: 'home',
+      link: '/'
+    },
+    {
+      title: 'about us',
+      link: 'about-us'
+    },
+    {
+      title: 'contact us',
+      link: 'contact-us'
+    },
+  ];
+
+  constructor() { }
+
+  ngOnInit() {
+  }
+
+}
